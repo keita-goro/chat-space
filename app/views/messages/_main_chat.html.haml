@@ -1,0 +1,28 @@
+.chat-main
+  .main-header
+    .main-header__left-box
+      .main-header__left-box__current-group
+      .main-header__left-box__member-list
+        スタバさん
+        .main-header__left-box__member-list__member
+    =  link_to '#' do
+      .main-header__edit-btn
+        Edit
+  .messages
+    .message
+      .message__upper-info
+        .message__upper-info__talker
+          goro
+        .message__upper-info__date
+          2020/05/04(Mon) 17:07:07
+      .message__text
+        konnnitiwa
+  .from
+    .new_message
+      .input-box
+        .input-box__text
+        %label.input-box__image
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+        %input{type: "submit", class: "submit-btn"}
+        
